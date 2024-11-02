@@ -2,6 +2,8 @@
 
 A web-based Tic-Tac-Toe game where a human player competes against an AI. The AI uses the Minimax algorithm to calculate the best possible moves and play strategically.
 
+For Demo: https://ttt-minimax.web.app/
+
 ## Features
 
 - **Player vs AI**: The human plays as "X" and the AI as "O".
