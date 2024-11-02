@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8" />
+		<meta content="Visutthi" name="author" />
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link type="text/css" rel="stylesheet" href="style.css" />
+		<script type="text/javascript" src="script.js"></script>
+		<title>Visutthi Tic-Tac-Toe - Minimax</title>
+	</head>
+	<body>
+		<header>
+			<p>Minimax Algorithm Tic Tac Toe</p>
+		</header>
+			<br />
+			<p id="message"></p>
+			<br />
+	<div class="tables-container">
+		<table id="tab-tic-tac-toe" cellspacing="0">
+			<caption>Main Board</caption>
+			<tr><td id="00" onclick="clickedCell(this)"></td><td id="01" onclick="clickedCell(this)"></td><td id="02" onclick="clickedCell(this)"></td></tr>
+			<tr><td id="10" onclick="clickedCell(this)"></td><td id="11" onclick="clickedCell(this)"></td><td id="12" onclick="clickedCell(this)"></td></tr>
+			<tr><td id="20" onclick="clickedCell(this)"></td><td id="21" onclick="clickedCell(this)"></td><td id="22" onclick="clickedCell(this)"></td></tr>
+		</table>
+			<!-- AI perspective table -->
+			<table id="ai-tab-tic-tac-toe" cellspacing="0">
+				<caption>AI perspective</caption>
+				<tr><td id="ai-00"></td><td id="ai-01"></td><td id="ai-02"></td></tr>
+				<tr><td id="ai-10"></td><td id="ai-11"></td><td id="ai-12"></td></tr>
+				<tr><td id="ai-20"></td><td id="ai-21"></td><td id="ai-22"></td></tr>
+			</table>
+	</div>
+	<div class="button-container">
+		<input type="button" value="Restart" id="bnt-restart" onclick="restartBnt(this)"/>
+		<br>
+		<input type="button" value="AI Move" id="bnt-ai-move" onclick="triggerAiMove()" disabled = true />
+	</div>
+	</body>
+</html>
